@@ -24,8 +24,8 @@ const projects = [
     title: 'Portfolio',
     description: 'My personal portfolio website showcasing my projects and skills (You are on it right now...)',
     technologies: ['React', 'Tailwind CSS', 'Git', 'Netlify'],
-    liveDemoLink: 'https://your-live-demo-link.com',
-    githubLink: 'https://github.com/your-github-repo-portfolio',
+    liveDemoLink: 'https://ian-cook-portfolio.netlify.app/',
+    githubLink: 'https://github.com/IanCo0k/my-portfolio',
     screenshot: portfolio, // Replace with your actual screenshot path
   },
 ];
