@@ -11,7 +11,7 @@ export default function Hero() {
             Software Engineer | Web Developer
           </p>
           <p className='text-gray-700'>
-            Hi, I'm Ian Cook. I'm a software engineer and web developer graduating from Central Michigan University with a Computer Science degree in May 2024. I will be moving back to the Grand Rapids area after graduation, and am looking for a full-time position in software engineering or web development. I have a strong passion for minimalistic, responsive, user-friendly design. A few of my projects, with the used techonologies, are listed below. Feel free to reach out to me on any of my social media platforms, or email me at, are listed below.
+            Hi, I'm Ian Cook. I'm a software engineer and web developer graduating from Central Michigan University with a Computer Science degree in May 2024. I will be moving back to the Grand Rapids area after graduation, and am looking for a full-time position in software engineering or web development. I have a strong passion for minimalistic, responsive, user-friendly design. A few of my projects, with the used techonologies, are listed below. Feel free to reach out to me on any of my social media platforms listed below.
           </p>
           <div className="flex mt-3 justify-center space-x-4">
             <a href="https://twitter.com/Chefc0ok" className="text-blue-500 hover:underline">
