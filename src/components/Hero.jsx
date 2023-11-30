@@ -14,16 +14,16 @@ export default function Hero() {
             Hi, I'm Ian Cook. I'm a software engineer and web developer graduating from Central Michigan University with a Computer Science degree in May 2024. I will be moving back to the Grand Rapids area after graduation, and am looking for a full-time position in software engineering or web development. I have a strong passion for minimalistic, responsive, user-friendly design. A few of my projects, with the used techonologies, are listed below. Feel free to reach out to me on any of my social media platforms, or email me at, are listed below.
           </p>
           <div className="flex mt-3 justify-center space-x-4">
-            <a href="#" className="text-blue-500 hover:underline">
+            <a href="https://twitter.com/Chefc0ok" className="text-blue-500 hover:underline">
               <FaTwitter size={32} className="hover:animate-bounce" />
             </a>
-            <a href="#" className="text-gray-800 hover:underline">
+            <a href="https://github.com/IanCo0k" className="text-gray-800 hover:underline">
               <FaGithub size={32} className="hover:animate-bounce" />
             </a>
-            <a href="#" className="text-blue-700 hover:underline">
+            <a href="https://www.linkedin.com/in/ian-cook-854896205/" className="text-blue-700 hover:underline">
               <FaLinkedin size={32} className="hover:animate-bounce" />
             </a>
-            <a href="#" className="text-purple-600 hover:underline">
+            <a href="https://www.instagram.com/ianco0k/" className="text-purple-600 hover:underline">
               <FaInstagram size={32} className="hover:animate-bounce" />
             </a>
           </div>
