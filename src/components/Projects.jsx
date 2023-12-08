@@ -2,6 +2,7 @@ import React from 'react';
 import cfb from '../assets/cfb.png';
 import northern from '../assets/northern.png';
 import portfolio from '../assets/portfolio.png';
+import sunset from '../assets/sunset.png';
 
 const projects = [
   {
@@ -28,19 +29,27 @@ const projects = [
     githubLink: 'https://github.com/IanCo0k/my-portfolio',
     screenshot: portfolio, // Replace with your actual screenshot path
   },
+  {
+    title: 'SunRise Tech',
+    description: 'A school project website built for a fictional tech company called SunRise Tech.',
+    technologies: ['React', 'Tailwind CSS', 'Git', 'Netlify', 'Firebase'],
+    liveDemoLink: 'https://sunrise-tech.netlify.app/',
+    githubLink: 'https://github.com/IanCo0k/sunrise',
+    screenshot: sunset,
+  }
 ];
 
 const ProjectCard = ({ project, index }) => {
-  const cardColors = ['bg-blue-100', 'bg-green-100', 'bg-purple-100']; // Different background colors
+  const cardColors = ['bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue']; // Different background colors
 
   return (
     <div className={`flex flex-col md:flex-row mb-4 p-4 border rounded-lg ${cardColors[index]}`}>
       <div className="md:w-1/3">
-        <img src={project.screenshot} alt={project.title} className="w-full h-auto" />
+        <img src={project.screenshot} alt={project.title} className="w-full rounded h-auto" />
       </div>
       <div className="md:w-2/3 md:pl-4">
-        <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-        <p className="text-gray-700 mb-2">{project.description}</p>
+        <h2 className="text-3xl pt-2 text-seasalt font-semibold mb-2">{project.title}</h2>
+        <p className="text-gray-300 mb-2">{project.description}</p>
         <div className="flex items-center space-x-2 mb-2">
           <div className="flex items-center space-x-2">
             {project.technologies.map((tech, techIndex) => (
@@ -69,13 +78,13 @@ const ProjectCard = ({ project, index }) => {
 const Projects = () => {
   return (
     <div id='projects' className='mt-8'>
-        <h1 className='text-4xl text-gray-800 underline mb-8'>Projects</h1>
+        <h1 className='text-4xl text-seasalt underline mb-8'>Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} index={index} />
       ))}
             <hr className='mt-10 mb-10' />
             
-            <h2 className='text-center mb-10 text-xl'>Romans 8:28</h2>
+            <h2 className='text-center text-seasalt mb-10 text-xl'>Romans 8:28</h2>
 
     </div>
   );
