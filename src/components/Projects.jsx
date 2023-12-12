@@ -3,6 +3,7 @@ import cfb from '../assets/cfb.png';
 import northern from '../assets/northern.png';
 import portfolio from '../assets/portfolio.png';
 import sunset from '../assets/sunset.png';
+import college from '../assets/college.png';
 
 const projects = [
   {
@@ -36,11 +37,19 @@ const projects = [
     liveDemoLink: 'https://sunrise-tech.netlify.app/',
     githubLink: 'https://github.com/IanCo0k/sunrise',
     screenshot: sunset,
+  },
+  {
+    title: 'College Where?',
+    description: "Side project to satisfy my roommates and I's desire to flex our knowledge of where NBA players went to college.",
+    technologies: ['React', 'Tailwind CSS', 'Python', 'Firebase', 'Git', 'Netlify'],
+    liveDemoLink: 'https://guess-the-college.netlify.app/',
+    githubLink: 'https://github.com/IanCo0k/college',
+    screenshot: college,
   }
 ];
 
 const ProjectCard = ({ project, index }) => {
-  const cardColors = ['bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue']; // Different background colors
+  const cardColors = ['bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue']; // Different background colors
 
   return (
     <div className={`flex flex-col md:flex-row mb-4 p-4 border rounded-lg ${cardColors[index]}`}>
