@@ -13,6 +13,9 @@ export default {
         'dark-purple': '#0f0326ff',
         'oxford-blue': '#0c1b33ff',
       },
+      backgroundColor: {
+        'body': 'var(--bg-dark-purple)',
+      },
     },
   },
   plugins: [],

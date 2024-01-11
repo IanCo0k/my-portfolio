@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'College Where?',
     description: "Side project to satisfy my roommates and I's desire to flex our knowledge of where NBA players went to college.",
-    technologies: ['React', 'Tailwind CSS', 'Python', 'Firebase', 'Git', 'Netlify'],
+    technologies: ['React', 'Tailwind CSS', 'Python', 'Firebase', 'Git'],
     liveDemoLink: 'https://guess-the-college.netlify.app/',
     githubLink: 'https://github.com/IanCo0k/college',
     screenshot: college,
@@ -49,10 +49,8 @@ const projects = [
 ];
 
 const ProjectCard = ({ project, index }) => {
-  const cardColors = ['bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue', 'bg-oxford-blue']; // Different background colors
-
   return (
-    <div className={`flex flex-col md:flex-row mb-4 p-4 border rounded-lg ${cardColors[index]}`}>
+    <div className={`flex flex-col md:flex-row mb-4 p-4 border rounded-lg bg-oxford-blue hover:bg-dark-purple transition-colors`}>
       <div className="md:w-1/3">
         <img src={project.screenshot} alt={project.title} className="w-full rounded h-auto" />
       </div>
@@ -86,7 +84,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <div id='projects' className='mt-8'>
+    <div id='projects' className='mt-8 p-2'>
         <h1 className='text-4xl text-seasalt underline mb-8'>Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} index={index} />
