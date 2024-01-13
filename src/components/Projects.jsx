@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import the ScrollTrigger plugin
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
 import cfb from '../assets/cfb.png';
 import northern from '../assets/northern.png';
@@ -9,7 +9,7 @@ import portfolio from '../assets/portfolio.png';
 import sunset from '../assets/sunset.png';
 import college from '../assets/college.png';
 
-gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
@@ -18,7 +18,7 @@ const projects = [
     technologies: ['React', 'Tailwind CSS', 'JSON', 'Google Firebase', 'Netlify'],
     liveDemoLink: 'https://cfbgrids.com/',
     githubLink: 'https://github.com/IanCo0k/cfb-grids',
-    screenshot: cfb, // Replace with your actual screenshot path
+    screenshot: cfb,
   },
   {
     title: 'Northern Mallard Supply Co',
@@ -26,7 +26,7 @@ const projects = [
     technologies: ['React', 'Tailwind CSS', 'Git', 'Netlify'],
     liveDemoLink: 'https://northern-mallard.netlify.app/',
     githubLink: 'https://github.com/IanCo0k/northern',
-    screenshot: northern, // Replace with your actual screenshot path
+    screenshot: northern,
   },
   {
     title: 'Portfolio',
@@ -34,7 +34,7 @@ const projects = [
     technologies: ['React', 'Tailwind CSS', 'Git', 'Netlify'],
     liveDemoLink: 'https://ian-cook-portfolio.netlify.app/',
     githubLink: 'https://github.com/IanCo0k/my-portfolio',
-    screenshot: portfolio, // Replace with your actual screenshot path
+    screenshot: portfolio,
   },
   {
     title: 'SunRise Tech',
@@ -65,7 +65,7 @@ const Projects = () => {
         duration: 1,
         scrollTrigger: {
           trigger: projectRef,
-          start: "top 80%", // Adjust the start trigger point as needed
+          start: "top 80%",
         },
       });
     });
@@ -86,17 +86,15 @@ const Projects = () => {
           <div className="md:w-2/3 md:pl-4">
             <h2 className="text-3xl pt-2 text-seasalt font-semibold mb-2">{project.title}</h2>
             <p className="text-gray-300 mb-2">{project.description}</p>
-            <div className="flex items-center space-x-2 mb-2">
-              <div className="flex items-center space-x-2">
-                {project.technologies.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="px-2 py-1 bg-gray-300 rounded-full text-gray-800 text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap items-center space-x-2 mb-2">
+              {project.technologies.map((tech, techIndex) => (
+                <span
+                  key={techIndex}
+                  className="px-2 py-1 bg-gray-300 rounded-full text-gray-800 text-sm mb-2 mr-2"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
             <div className="flex justify-between md:justify-start md:space-x-4 mt-4">
               <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
