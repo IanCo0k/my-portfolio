@@ -8,6 +8,7 @@ import northern from '../assets/northern.png';
 import portfolio from '../assets/portfolio.png';
 import sunset from '../assets/sunset.png';
 import college from '../assets/college.png';
+import gridiron from '../assets/gridiron.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,6 +20,14 @@ const projects = [
     liveDemoLink: 'https://cfbgrids.com/',
     githubLink: 'https://github.com/IanCo0k/cfb-grids',
     screenshot: cfb,
+  },
+  {
+    title: 'Gridiron Insights',
+    description: 'A data visualization website that allows you to compare NFL players against one another.',
+    technologies: ['React', 'Tailwind CSS', 'JSON', 'Google Firebase', 'Netlify', 'User Authentication', 'Data Visualization'],
+    liveDemoLink: 'https://gridiron-insights.netlify.app/',
+    githubLink: 'https://github.com/IanCo0k/GridironInsights',
+    screenshot: gridiron,
   },
   {
     title: 'Northern Mallard Supply Co',
