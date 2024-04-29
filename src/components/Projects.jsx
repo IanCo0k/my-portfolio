@@ -26,8 +26,8 @@ const projects = [
     title: 'Fawn Crest Golf Course',
     description: 'A demo website built for a golf course in Wellston, Michigan.',
     technologies: ['Next.js', 'Tailwind CSS', 'Git', 'Vercel'],
-    liveDemoLink: 'https://fawncrestgolf.com/',
-    githubLink: 'https://github.com/IanCo0k/cfb-grids',
+    liveDemoLink: 'https://fawn-8rs4n87eg-ianco0ks-projects.vercel.app/',
+    githubLink: 'https://github.com/IanCo0k/fawn',
     screenshot: fawn,
   },
   {
