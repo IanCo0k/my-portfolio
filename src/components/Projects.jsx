@@ -9,6 +9,7 @@ import portfolio from '../assets/portfolio.png';
 import sunset from '../assets/sunset.png';
 import college from '../assets/college.png';
 import gridiron from '../assets/gridiron.png';
+import fawn from '../assets/fawn.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +21,14 @@ const projects = [
     liveDemoLink: 'https://cfbgrids.com/',
     githubLink: 'https://github.com/IanCo0k/cfb-grids',
     screenshot: cfb,
+  },
+  {
+    title: 'Fawn Crest Golf Course',
+    description: 'A demo website built for a golf course in Wellston, Michigan.',
+    technologies: ['Next.js', 'Tailwind CSS', 'Git', 'Vercel'],
+    liveDemoLink: 'https://fawncrestgolf.com/',
+    githubLink: 'https://github.com/IanCo0k/cfb-grids',
+    screenshot: fawn,
   },
   {
     title: 'Gridiron Insights',
